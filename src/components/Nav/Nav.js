@@ -32,21 +32,25 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction
+        href="/"
         style={{ color: "white" }}
         label="Trending"
         icon={<TrendingUpIcon />}
       />
       <BottomNavigationAction
+        href="/movies"
         style={{ color: "white" }}
         label="Movies"
         icon={<MovieFilterIcon />}
       />
       <BottomNavigationAction
+        href="/tv"
         style={{ color: "white" }}
         label="TV"
         icon={<TvIcon />}
       />
       <BottomNavigationAction
+        href="/search"
         style={{ color: "white" }}
         label="Search"
         icon={<SearchIcon />}
