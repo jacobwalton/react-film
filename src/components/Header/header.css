@@ -3,11 +3,13 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  background: rgb(65, 65, 75);
-  font-size: 30px;
+  background-image: linear-gradient(rgb(59, 49, 49), rgb(30, 55, 55));
+  font-size: 34px;
   padding-bottom: 15px;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-  color: gainsboro;
+  padding-top: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  color: rgb(255, 250, 240);
   z-index: 1;
   cursor: pointer;
+  font-weight: bolder;
 }

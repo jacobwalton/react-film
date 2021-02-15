@@ -1,0 +1,7 @@
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(rgb(30, 55, 55), rgb(59, 49, 49));
+  color: rgb(255, 250, 240);
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
