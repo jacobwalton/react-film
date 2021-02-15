@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 8px;
+  margin: 9px auto;
+  background-color: rgb(20, 37, 37);
+  border-radius: 15px 15px 15px 0px;
+  min-width: fit-content;
+}
+
+.card:hover {
+  background-color: rgba(255, 250, 240, 0.8);
+  color: black;
+}
+
+.poster {
+  border-radius: 15px 15px 15px 0px;
+  min-width: fit-content;
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 46%;
+  }
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.subTitle {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2px;
+  padding-bottom: 5px;
+}

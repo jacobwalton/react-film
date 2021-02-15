@@ -4,7 +4,9 @@ import "./header.css";
 const Header = () => {
   return (
     <div>
-      <header className="header">Movies and TV 🎞</header>
+      <header onClick={() => window.scroll(0, 0)} className="header">
+        Movies and TV 🎞
+      </header>
     </div>
   );
 };

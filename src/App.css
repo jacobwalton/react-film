@@ -1,7 +1,29 @@
+* {
+  scroll-behavior: smooth;
+}
+
 .App {
   min-height: 100vh;
   background-image: linear-gradient(rgb(30, 55, 55), rgb(59, 49, 49));
   color: rgb(255, 250, 240);
   padding-top: 80px;
   padding-bottom: 70px;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  padding: 4px;
+  color: rgb(255, 250, 240);
+}
+
+.pagination {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 5px;
+  margin: 10px auto;
+  justify-content: center;
 }
