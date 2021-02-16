@@ -7,8 +7,8 @@ import { img_300, noPicture } from "../../config/config";
 
 const handleDragStart = (e) => e.preventDefault();
 
-const Carousel = ({ media_type, id }) => {
-  const [cast, setCast] = useState();
+const Gallery = ({ media_type, id }) => {
+  const [cast, setCast] = useState([]);
 
   const items = cast?.map((item) => (
     <div className="carouselItem">
@@ -36,7 +36,7 @@ const Carousel = ({ media_type, id }) => {
 
   const getCast = async () => {
     const { data } = await axios.get(
-      `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
+      `https://api.themoviedb.org/3/${media_type}/${id}/credits?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
     setCast(data.cast);
   };
@@ -57,4 +57,4 @@ const Carousel = ({ media_type, id }) => {
   );
 };
 
-export default Carousel;
+export default Gallery;
