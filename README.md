@@ -7,7 +7,7 @@
 
 Users are able to search for movies or TV shows and also filter by genre!
 
-_Deployed here via Vercel:_ https://react-film.vercel.app/
+_Deployed here via Vercel:_ https://react-films-rho.vercel.app/
 
 # Table of Contents:
 
