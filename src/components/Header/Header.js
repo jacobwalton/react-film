@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <header onClick={() => window.scroll(0, 0)} className="header">
-        Movies and TV 🎞
+        React Film 🎞
       </header>
     </div>
   );
