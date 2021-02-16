@@ -1,12 +1,13 @@
 .card {
   display: flex;
+
   flex-direction: column;
   width: 200px;
   padding: 8px;
   margin: 9px auto;
   background-color: rgb(20, 37, 37);
   border-radius: 15px 15px 15px 0px;
-  min-width: fit-content;
+  width: 25%;
 }
 
 .card:hover {
@@ -16,7 +17,7 @@
 
 .poster {
   border-radius: 15px 15px 15px 0px;
-  min-width: fit-content;
+  width: 100%;
 }
 
 @media (max-width: 550px) {
