@@ -12,6 +12,7 @@ import {
 import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import "./modal.css";
+import Carousel from "../Carousel/Carousel";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -116,7 +117,9 @@ export default function CardModal({ children, media_type, id }) {
                     <i className="tagline">{content.tagline}</i>
                   )}
                   <span className="modalDescription">{content.overview}</span>
-                  <div></div>
+                  <div>
+                    <Carousel media_type={media_type} id={id} />
+                  </div>
                   <Button
                     variant="contained"
                     startIcon={<YouTubeIcon />}
