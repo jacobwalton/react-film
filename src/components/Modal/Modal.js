@@ -11,6 +11,7 @@ import {
 } from "../../config/config";
 import { Button } from "@material-ui/core";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import "./modal.css";
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -82,7 +83,7 @@ export default function CardModal({ children, media_type, id }) {
           {content && (
             <div className={classes.paper}>
               <div className="modalContent">
-                {/* <img
+                <img
                   className="posterPortrait"
                   alt={content.name || content.title}
                   src={
@@ -90,7 +91,7 @@ export default function CardModal({ children, media_type, id }) {
                       ? `${img_500}/${content.poster_path}`
                       : unavailable
                   }
-                /> */}
+                />
                 <img
                   className="posterLandscape"
                   alt={content.name || content.title}
