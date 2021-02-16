@@ -5,9 +5,8 @@
 
 .posterPortrait {
   box-shadow: 0 5px 15px #000000;
-
-  display: none;
   object-fit: contain;
+  display: none;
   border-radius: 10px;
 }
 
@@ -78,15 +77,15 @@
     justify-content: space-around;
     padding: 10px 0;
   }
-  .modalContent__about {
+  .modalAbout {
     width: 58%;
     padding: 0;
     height: 100%;
   }
-  .modalContent__title {
+  .modalTitle {
     font-size: 3.5vw;
   }
-  .modalContent__description {
+  .modalDescription {
     font-size: 22px;
   }
 }
