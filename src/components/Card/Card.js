@@ -2,10 +2,11 @@ import React from "react";
 import { img_300, unavailable } from "../../config/config";
 import "./card.css";
 import { Badge } from "@material-ui/core/";
+import CardModal from "../Modal/Modal";
 
 const Card = ({ id, poster, title, date, media_type, vote_average }) => {
   return (
-    <div className="card">
+    <CardModal media_type={media_type} id={id}>
       <Badge
         badgeContent={vote_average}
         color={vote_average >= 7 ? "primary" : "secondary"}
@@ -20,7 +21,7 @@ const Card = ({ id, poster, title, date, media_type, vote_average }) => {
         {media_type.toUpperCase()}
         <span>{date}</span>
       </span>
-    </div>
+    </CardModal>
   );
 };
 
